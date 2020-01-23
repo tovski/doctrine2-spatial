@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright (C) 2012 Derek J. Lambert
  *
@@ -31,13 +32,11 @@ use CrEOF\Spatial\ORM\Query\AST\Functions\AbstractSpatialDQLFunction;
  * @author  Derek J. Lambert <dlambert@dereklambert.com>
  * @license http://dlambert.mit-license.org MIT
  */
-class GeomFromText extends AbstractSpatialDQLFunction
-{
+class GeomFromText extends AbstractSpatialDQLFunction {
+
     protected $platforms = array('mysql');
-
-    protected $functionName = 'GeomFromText';
-
+    protected $functionName = 'ST_GeomFromText';
     protected $minGeomExpr = 1;
-
     protected $maxGeomExpr = 1;
+
 }
