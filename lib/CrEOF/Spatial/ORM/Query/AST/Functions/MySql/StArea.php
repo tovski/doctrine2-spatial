@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright (C) 2012 Derek J. Lambert
  *
@@ -31,13 +32,11 @@ use CrEOF\Spatial\ORM\Query\AST\Functions\AbstractSpatialDQLFunction;
  * @author  Derek J. Lambert <dlambert@dereklambert.com>
  * @license http://dlambert.mit-license.org MIT
  */
-class Area extends AbstractSpatialDQLFunction
-{
+class StArea extends AbstractSpatialDQLFunction {
+
     protected $platforms = array('mysql');
-
-    protected $functionName = 'Area';
-
+    protected $functionName = 'ST_Area';
     protected $minGeomExpr = 1;
-
     protected $maxGeomExpr = 1;
+
 }
